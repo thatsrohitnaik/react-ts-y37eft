@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-const ChildA = ({ tea, setTea }: any) => {
+const ChildA = ({ tea, setTea, funcProp }: any) => {
   const [a, setA] = useState<boolean>(false);
   useEffect(() => {
-    console.log('Child A');
+    console.log('Callback Child A');
+    funcProp();
   });
   return (
     <p
@@ -12,7 +13,7 @@ const ChildA = ({ tea, setTea }: any) => {
         setTea(!tea);
       }}
     >
-      Memo child A {a ? 'true' : 'false'}
+      Callback child A {a ? 'true' : 'false'}
     </p>
   );
 };

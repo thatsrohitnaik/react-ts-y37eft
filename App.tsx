@@ -1,12 +1,14 @@
 import * as React from 'react';
 // import { Abc } from './useMemo'
 import './style.css';
-import Parent from './Memo/parent';
+import Memo from './Memo/parent';
+import Callback from './Callback';
 
 export default function App() {
   return (
     <div>
-      <Parent />
+      <Callback />
+      <Memo />
     </div>
   );
 }

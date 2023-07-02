@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ChildB = ({ coffee, setCoffee }) => {
   const [b, setB] = useState<boolean>(false);
   useEffect(() => {
-    console.log('Child B');
+    console.log('Callback Child B');
   });
   return (
     <p
@@ -12,7 +12,7 @@ const ChildB = ({ coffee, setCoffee }) => {
         setCoffee(!coffee);
       }}
     >
-      Memo child B {b ? 'true' : 'false'}
+      Callback child B {b ? 'true' : 'false'}
     </p>
   );
 };
