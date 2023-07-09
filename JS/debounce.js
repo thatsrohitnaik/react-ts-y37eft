@@ -1,5 +1,6 @@
 import React from 'react';
 
+// the trick is to save the timer first and clear all the previous callss
 const Debounce = () => {
   let timer;
   const callApi = () => {
