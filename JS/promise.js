@@ -1,6 +1,6 @@
 import React from 'react';
 import { fetchData2 } from './util';
-
+ 
 const JS = () => {
   React.useEffect(() => {
     fetchData(false);

@@ -5,6 +5,7 @@ import Memo from './Memo/parent';
 import Callback from './Callback';
 import Debounce from './JS/debounce';
 import Promise from './JS/promise';
+import Classes from './JS/classes';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
        */}
       <Debounce />
       <Promise />
+      <Classes />
     </div>
   );
 }
