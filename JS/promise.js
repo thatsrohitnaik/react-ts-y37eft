@@ -1,23 +1,14 @@
 import React from 'react';
-// import { fetchData } from './util';
+import { fetchData2 } from './util';
 
 const JS = () => {
   React.useEffect(() => {
     fetchData(false);
-    fetchData('api').then((d) => {});
+    fetchData2('api').then((d) => {
+      console.log(d);
+    });
   });
   const [a, setA] = React.useState(true);
-  const fetchData = (api) => {
-    return new Promise((resolve, reject) => {
-      fetch(api)
-        .then((res) => {
-          resolve(res);
-        })
-        .catch((e) => {
-          reject(e);
-        });
-    });
-  };
 
   const getDaata = () => {
     return new Promise((resolve, reject) => {

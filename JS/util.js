@@ -1,4 +1,4 @@
-export const fetchData = (api) => {
+export const fetchData2 = (api) => {
   return new Promise((resolve, reject) => {
     fetch(api)
       .then((res) => {
